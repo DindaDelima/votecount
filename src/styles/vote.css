@@ -1,0 +1,149 @@
+body {
+  font-family: sans-serif;
+  -webkit-font-smoothing: auto;
+  -moz-font-smoothing: auto;
+  -moz-osx-font-smoothing: grayscale;
+  /* font-smoothing: auto; */
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  width: 100%;
+  
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: rgb(4, 4, 4);
+  text-align: center;
+}
+.year {
+  margin-top: -1rem;
+}
+.title{
+    margin-bottom: 4vw;
+    color: white;
+    gap: 1rem;
+    /* margin-top: -10px; */
+}
+.container{
+    margin-top: -6.5vw;
+}
+/* .canBtn{
+    width: 8rem;
+    height: 3rem;
+    margin-right: 3vw;
+    margin-bottom: 5vw;
+    padding: 2px;
+    background: linear-gradient(15deg in oklch, oklch(83.46% 0.1433 189.14) 0.0%, oklch(83.18% 0.1394 190.90) 3.2%, oklch(82.83% 0.1335 193.31) 6.5%, oklch(82.41% 0.1268 196.17) 9.7%, oklch(81.88% 0.1202 199.28) 12.9%, oklch(81.24% 0.1148 202.45) 16.1%, oklch(80.48% 0.1118 205.48) 19.4%, oklch(79.56% 0.1118 208.30) 22.6%, oklch(78.45% 0.1140 211.12) 25.8%, oklch(77.21% 0.1177 213.97) 29.0%, oklch(75.90% 0.1224 216.86) 32.3%, oklch(74.58% 0.1273 219.79) 35.5%, oklch(73.31% 0.1320 222.79) 38.7%, oklch(72.13% 0.1360 225.91) 41.9%, oklch(70.98% 0.1398 229.25) 45.2%, oklch(69.84% 0.1436 232.72) 48.4%, oklch(68.70% 0.1477 236.16) 51.6%, oklch(67.57% 0.1520 239.46) 54.8%, oklch(66.43% 0.1567 242.47) 58.1%, oklch(65.28% 0.1621 245.07) 61.3%, oklch(64.09% 0.1682 247.18) 64.5%, oklch(62.86% 0.1733 248.98) 67.7%, oklch(61.65% 0.1773 250.59) 71.0%, oklch(60.49% 0.1822 252.22) 74.2%, oklch(59.42% 0.1894 254.03) 77.4%, oklch(58.48% 0.2009 256.19) 80.6%, oklch(57.64% 0.2063 258.91) 83.9%, oklch(56.87% 0.2116 262.01) 87.1%, oklch(56.19% 0.2166 265.21) 90.3%, oklch(55.59% 0.2209 268.24) 93.5%, oklch(55.10% 0.2246 270.80) 96.8%, oklch(54.72% 0.2274 272.62) 100.0%);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 1px 1px 5px white;
+    transition: width 0.3s, height 0.3s
+} */
+
+
+/* CSS */
+.candi {
+  display: flex;
+  justify-content: center;
+  margin-left: 6rem;
+  margin-bottom: 2rem;
+}
+.canBtn {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 5.2rem;
+    justify-content: center;
+    padding: 14px 18px;
+    gap: 25px;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right, rgb(12, 186, 166), rgb(36, 255, 240));
+    position: relative;
+    border-radius: 8px;
+    /* border: 1px solid rgb(65, 65, 65); */
+    transition-duration: 0.3s;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+    font-size: medium;
+    box-shadow: 2px 4px 1px rgb(255, 0, 0);
+}
+
+.canBtn .arrow {
+    height: 20px;
+}
+
+.canBtn:hover {
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 2px rgb(185, 185, 185), 0px 0px 10px rgb(97, 97, 97);
+    transform: scale(0.95);
+}
+
+.canBtn:active {
+    transform: scale(0.95);
+}
+
+/*** disabled style ***/
+.canBtn:disabled {
+    pointer-events: none;
+    opacity: .65;
+    color: #7e7e7e;
+    background: #b9b9b9;
+    box-shadow: none;
+    text-shadow: none;
+}
+.result{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-self: center;
+    margin-left: 8rem;
+    margin-top: 2rem;
+}
+.label{
+  margin-left: -7rem;
+  color: rgb(255, 255, 255);
+  font-size: large;
+}
+.resBox{
+    width: 5rem;
+    margin-left: 1rem;
+    margin-right: 8rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    background:white;
+    color:black;
+    font-size: large;
+}
+.canGroup{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.cancel{
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    margin-right: 9.5vw;  
+
+}
+
+.cancel:hover{
+  background: #c60000;
+
+}
+
+.cancelBtn {
+  margin-left: 10.5vw;
+  font-family: 'Times New Roman', Times, serif;
+}
+.total{
+  color: rgb(255, 255, 255);
+}

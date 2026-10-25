@@ -1,0 +1,32 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  position: sticky;
+}
+
+.footCont{
+    background-image: linear-gradient(to left, rgb(2, 65, 253) , rgb(6, 0, 85));
+    margin-left: -17rem;
+    height: 10rem;
+}
+
+.sections{
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    justify-content: space-evenly;
+    text-align: start;
+}
+
+p{
+    margin-top: -0.5rem;
+}
+
+p:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 3px;
+    color: black;
+}

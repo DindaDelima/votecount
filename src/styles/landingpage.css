@@ -1,0 +1,59 @@
+.body{
+    height: 100%;
+    width: 100%;
+    margin-left: -2rem;
+    overflow: hidden;
+    background-image: url('../src/assets/theodore.png');
+    background-position: right;
+    background-position-x: 61vw;
+    background-position-y: -7vw;
+    background-size: 38%;
+    background-repeat: no-repeat;
+    animation: floatBackground 4s ease-in-out infinite;
+}
+
+@keyframes floatBackground {
+  0% {
+    background-position-y: -70px;
+  }
+  50% {
+    background-position-y: -50px; /* Moves up 20px */
+  }
+  100% {
+    background-position-y: -70px; /* Returns to start */
+  }
+}
+
+.title{
+    margin-top: 5rem;
+    margin-bottom: -0.3rem;
+}
+.maincont{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    padding: 5px;
+}
+
+.desc{
+    width: 40rem;
+    text-align: start;
+    margin-right: 20px;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    text-align: start;
+}
+
+.featBtn{
+    margin-top: 3.5rem;
+    margin-left: -7rem;
+    margin-right: 4px ;
+    border: none;
+    background-image: linear-gradient(to right, rgb(2, 65, 253) , rgb(6, 0, 85));
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px white;
+}
