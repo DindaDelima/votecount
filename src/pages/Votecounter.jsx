@@ -105,9 +105,7 @@ export default function Votecounter() {
                   value={WarrVote} readOnly></input>
               </div>    
           </div>
-          <div>
-            <h2 className="total">Overall Total Vote: {total}</h2>
-            </div>  
+         
             {/* {pop ? <PopUp/> :null} */}
       </div>
   )

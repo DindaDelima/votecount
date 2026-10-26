@@ -13,6 +13,7 @@ export default function LandingPage(){
     // const feats = [vote, temp, math]
 
     const [invalid, setInvalid] = useState(0)
+    const [total, setTotal] = useState(0)
 
     const handleInvalid = () => {
         setInvalid((prevInvalid) => prevInvalid + 1);
@@ -36,6 +37,9 @@ const handleCancelIn = () => {
             </div>
              <img src={logo} alt="" width={100} height={100}/>
             <Votecounter/>
+             <div>
+            <h2 className="total">Overall Total Vote: {total}</h2>
+            </div>  
             {/* <Footer /> */}
         </div>
     )
