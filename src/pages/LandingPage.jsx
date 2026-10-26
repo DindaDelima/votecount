@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavSec from "./Navsec";
+// import {X} from lucide-react;
 import '../styles/landingpage.css'
 import Footer from "./footer";
 import vote from '../assets/vote.png'
@@ -14,15 +15,25 @@ export default function LandingPage(){
     const [invalid, setInvalid] = useState(0)
 
     const handleInvalid = () => {
-        setInvalid(invalid + 1)
-        setTotal(total + 1)
-    }
+        setInvalid((prevInvalid) => prevInvalid + 1);
+        setTotal((prevTotal) => prevTotal + 1);
+    };
+
+const handleCancelIn = () => {
+        if (invalid > 0) {
+            setInvalid((prevInvalid) => prevInvalid - 1);
+            setTotal((prevTotal) => prevTotal - 1);
+         }
+    };
 
     return(
         <div className="body">
+            <div>
             <button class="invalidBtn" role="button" onClick={handleInvalid}>
                     Invalid Vote <span className="count">{invalid}</span>
             </button>
+            <button className="cancelIn" onClick={handleCancelIn}>X</button>
+            </div>
              <img src={logo} alt="" width={100} height={100}/>
             <Votecounter/>
             {/* <Footer /> */}

@@ -8,7 +8,6 @@ export default function Votecounter() {
     const [matVote, setmatVote] = useState(0);
     const [WarrVote, setwarrVote] = useState(0);
     const [total, setTotal] = useState(0);
-    const [invalid, setInvalid] = useState(0);
     
 
     const handleFelVote = () => {
