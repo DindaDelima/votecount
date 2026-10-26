@@ -1,5 +1,6 @@
 .body{
-    height: 100%;
+    min-height: 100vh;
+  padding: 20px 0;
     width: 100%;
     margin-left: -2rem;
     overflow: hidden;
@@ -10,6 +11,7 @@
     background-size: 38%;
     background-repeat: no-repeat;
     animation: floatBackground 4s ease-in-out infinite;
+    overflow-y: auto !important;
 }
 
 @keyframes floatBackground {
@@ -61,7 +63,7 @@
 /* CSS */
 .cancelIn{
   position: absolute;
-  margin-left: -10rem;
+  margin-left: -20rem;
    background-color: rgb(255, 213, 0);
   box-shadow: 2px 4px 1px rgb(255, 251, 132);
   color: black;
@@ -70,7 +72,7 @@
 
 .invalidBtn{
   position: absolute;
-  margin-left: -20rem;
+  margin-left: -30rem;
   background-color: rgb(177, 0, 0);
   box-shadow: 2px 4px 1px red;
 }
@@ -90,4 +92,24 @@
   padding-top: 4px;
   padding-bottom:4px;
   border-radius: 5px;
+}
+/* Done Button */
+.Done {
+  background-color: #22c55e; /* Green button background */
+  color: #ffffff;            /* White text */
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+.Done:hover {
+  background-color: #16a34a;
+  transform: translateY(-2px);
 }

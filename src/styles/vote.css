@@ -10,7 +10,7 @@ body {
   
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 h1 {
