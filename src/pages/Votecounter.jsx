@@ -8,12 +8,14 @@ export default function Votecounter() {
     const [matVote, setmatVote] = useState(0);
     const [WarrVote, setwarrVote] = useState(0);
     const [total, setTotal] = useState(0);
+    const [invalid, setInvalid] = useState(0);
     
 
     const handleFelVote = () => {
         setFelvote(felVote + 1)
         setTotal(total + 1)
     }
+    
     const handleMatVote = () => {
         setmatVote(matVote + 1)
         setTotal(total + 1)
@@ -53,8 +55,6 @@ export default function Votecounter() {
         }
     }
             
-    
-
     const PopUp = () => {
       return(
         <div>

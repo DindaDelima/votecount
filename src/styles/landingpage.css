@@ -57,3 +57,24 @@
     color: rgb(255, 255, 255);
     box-shadow: 1px 1px 3px white;
 }
+
+/* CSS */
+.invalidBtn{
+  position: absolute;
+  margin-left: -20rem;
+  background-color: rgb(177, 0, 0);
+  box-shadow: 2px 4px 1px red;
+}
+.invalidBtn:hover {
+  transform: scale(0.9);
+  box-shadow: none;
+}
+.count {
+  background-color: white;
+  color: black;
+  padding-left: 8px;
+  padding-right:8px;
+  padding-top: 4px;
+  padding-bottom:4px;
+  border-radius: 5px;
+}
